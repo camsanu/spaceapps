@@ -1,0 +1,12 @@
+# TODO
+- Fitness tracking (Steps, nutrition, water)
+- Sleep tracking
+- mental health (mood evaluations?)
+- menstrual cycle tracking ?
+- Prediction models for body (bone density, muscle loss)
+- bpm
+- blood pressure
+- blood oxygen
+- Prediction models for outside (solar flares)
+- Emergency contact for in-ship and on-earth consult
+- Profile (predispositions, measures)
