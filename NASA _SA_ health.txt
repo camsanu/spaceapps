@@ -1,0 +1,76 @@
+NASA Space Apps --- Software for monitoring astronauts' health
+
+Como afecta??
+Cosas que podemos medir? tipo sangre, oxigeno
+Things to monitor:
+Cardiac and circulatory disease (radiation)
+Exercise and fitness tracker (bone and muscle density)
+Journal entry to monitor mental health (isolation)
+
+
+Astronauts encounter five hazards as the journey through space.
+
+
+1.- SPACE RADIATION
+One of the most dangerous aspects of travelling to Mars. Astronauts are exposed to radiation levels significantly higher(x10) than those experienced on Earth. They come from the sun, galactic cosmic rays and cause damage to the DNA.
+	Health Impact:
+	--> Increases cancer risks
+	--> Damage to central nervous system:
+		-altering cognitive functions
+		-reducing motor functions
+	--> Behavioral Changes
+	
+	Potential Symptoms
+	--> Nausea
+	--> Vomiting
+	--> Anorexia
+	--> Fatigue
+	--> Cataracts
+	--> Cardiac and circulatory disease
+
+
+2.- ISOLATION AND CONFINEMENT
+There are psychological and behavioral risks of being closed in small places. Crews for Mars will undergo more preparation since they will travel further and longer.
+	Risks:
+	--> Behavioral and cognitive effects: Decline in mood, cognition, morale or interpersonal interaction, sleep disorder (probably)
+	--> Environmental stressors: noisy environment, lack of natural light, monotony rutine
+	--> Mission demands: heavy workloads and long periods of boredom, combined with a restricted diet (lack of fresh food)
+	--> Team miscommunication
+
+	Solutions?
+	--> Journal app
+	--> Sleep schedule??
+
+
+
+3.- DISTANCE FROM EARTH
+Traveling to the Moon (238,855 miles) and Mars (140 million miles) involves vast distances—roughly. This means resupply missions are not an option. Communication delays of up to 20 minutes one-way.
+	How to prepare for mission??
+	--> Medical Readiness: Developing procedures and diagnostic tools, such as performing ultrasounds to monitor physical changes in space
+	-->
+	
+
+
+4.- GRAVITY FIELDS
+On the journey to mars, astronauts will encounter three different gravity fields: earth (the ones they are acostumed to), deep space (six month journey characterized with weightlessness) and mars (has ~3/8 of earth's gravity)
+	Impact on the human body:
+	--> Spatial Orientation and balance
+	--> Hand-eye coordination
+	--> Locomotion
+	--> Muscle and bone health (bone density decreases 1% per month)
+
+
+5.- HOSTILE/CLOSED ENVIRONMENTS
+Space is inhospitable, so spacecraft is managed to sustain human life for long duration missions.
+	Risks:
+	--> Microbes can evolve and change their characteristics and spread more easily within the crew
+	--> High stress, confinement, and isolation can impact the immune system, making astronauts more susceptible to illnesses or allergies
+	
+	Solutions??
+	--> Monitor air quality and microbial populations
+	--> "Close the loop": recycle resources like air and water, including carbon dioxide and urine
+
+
+
+
+
