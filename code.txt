@@ -1,0 +1,379 @@
+/* Shared widget foundation */
+.widget,
+.widget * {
+  box-sizing: border-box;
+}
+
+.widget {
+  flex-shrink: 0;
+}
+
+/* ── Notification panels ───────────────────────── */
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #757575;
+}
+
+.notification--large {
+  width: 1254px;
+  height: 895px;
+  justify-content: center;
+  background: #b9bbdf;
+  box-shadow: inset 0 0 0 1px #625b71;
+}
+
+.notification--wide {
+  width: 676px;
+  height: 207px;
+}
+
+.notification--wide-tall {
+  width: 676px;
+  height: 209px;
+}
+
+.notification--compact {
+  width: 395px;
+  height: 168px;
+}
+
+/* ── Rotated card slots ────────────────────────── */
+/* Retains the original local dimensions and rotation.
+   Rotation does not change the element's layout footprint. */
+
+.card-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  height: 56.757px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 1px #d9d9d9;
+  transform: rotate(-90.057564deg);
+  transform-origin: center;
+}
+
+.card-slot--white {
+  width: 733.071px;
+  background: #fff;
+}
+
+.card-slot--purple {
+  width: 526.07px;
+  background: #a5a6f6;
+}
+
+/* ── Menu ──────────────────────────────────────── */
+
+.widget-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 262px;
+  height: 369px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow:
+    inset 0 0 0 1px #d9d9d9,
+    0 4px 4px -1px rgb(12 12 13 / 5%),
+    0 4px 4px -1px rgb(12 12 13 / 10%);
+}
+
+/* ── Information cards ─────────────────────────── */
+/* Shared by the recommendations and report cards. */
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  width: 306px;
+  height: 163px;
+  padding: 24px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px #d9d9d9;
+}
+
+.info-card__icon {
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  color: #1e1e1e;
+}
+
+.info-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 202px;
+  min-width: 0;
+}
+
+.info-card__title {
+  margin: 0;
+  color: #1e1e1e;
+  font: 600 24px / 1.2 "Inter", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* ── To-do list and standalone list items ───────── */
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  width: 216px;
+  height: 278px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #fef7ff;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 216px;
+  height: 40px;
+  padding: 0 16px;
+  background: transparent;
+}
+
+.todo-item__label {
+  flex: 0 0 120px;
+  color: #1d1b20;
+  font: 400 16px / 24px "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.todo-item__checkbox-target {
+  display: grid;
+  place-items: center;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+}
+
+.todo-item__checkbox {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #6750a4;
+}
+
+/* ── Headings ──────────────────────────────────── */
+/* Shared by the to-do and exercise headings. */
+
+.widget-heading {
+  display: flex;
+  align-items: flex-start;
+  width: 158px;
+  height: 55px;
+}
+
+.widget-heading__text {
+  margin: 0;
+  color: #1e1e1e;
+  font: 600 24px / 1.2 "Inter", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.widget-heading--log {
+  width: 50px;
+  height: 34px;
+}
+
+/* The calendar heading contains text larger than its wrapper. */
+.calendar-dates {
+  width: 158px;
+  height: 55px;
+  overflow: visible;
+}
+
+.calendar-dates__text {
+  width: 655px;
+  min-height: 145px;
+  margin: 0;
+  white-space: pre;
+  color: #1e1e1e;
+  font: 600 24px / 1.2 "Inter", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.calendar-dates__highlight {
+  color: #b3261e;
+}
+
+/* ── Calendar month and year controls ───────────── */
+
+.calendar-select-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 184px;
+  height: 28px;
+}
+
+.calendar-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 88px;
+  height: 28px;
+  padding: 6px;
+  border: 0;
+  border-radius: 8px;
+  outline: 1px solid #d9d9d9;
+  outline-offset: -0.5px;
+  background: #fff;
+  color: #1e1e1e;
+  font: 400 16px / 16px "Inter", sans-serif;
+}
+
+.calendar-select__value {
+  width: 52px;
+}
+
+.calendar-select__icon {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Button groups ─────────────────────────────── */
+
+.widget-button-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 134px;
+  height: 58px;
+}
+
+.widget-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 8px;
+  height: 40px;
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background: #e3e3e3;
+  box-shadow: inset 0 0 0 1px #767676;
+  color: #1e1e1e;
+  font: 400 16px / 16px "Inter", sans-serif;
+  white-space: nowrap;
+}
+
+.widget-button--read-more {
+  width: 106px;
+}
+
+.widget-button--watch-video {
+  width: 118px;
+}
+
+.widget-button--enter-forms {
+  width: 112px;
+}
+
+.widget-button--see-review {
+  width: 108px;
+}
+
+/* ── Navigation bars ───────────────────────────── */
+
+.widget-navigation {
+  display: flex;
+  align-items: center;
+  width: 352px;
+  height: 80px;
+  padding: 0 8px;
+  border-radius: 80px;
+  background: #f3edf7;
+}
+
+.widget-navigation__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 112px;
+  gap: 4px;
+  height: 60px;
+  padding: 12px 0 16px;
+}
+
+.widget-navigation__item--with-label {
+  height: 80px;
+}
+
+.widget-navigation__item--active {
+  justify-content: center;
+}
+
+.widget-navigation__indicator {
+  width: 64px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: transparent;
+}
+
+.widget-navigation__item--active
+.widget-navigation__indicator {
+  background: #e8def8;
+}
+
+.widget-navigation__label {
+  margin: 0;
+  color: #49454f;
+  font: 500 12px / 16px "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* ── Help pill and small information text ───────── */
+
+.help-pill {
+  width: 64px;
+  height: 32px;
+  border-radius: 100px;
+  background: #e8def8;
+}
+
+.help-pill__text,
+.widget-info-text {
+  margin: 0;
+  color: #000;
+  font: 600 12px / 16px "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.widget-info-text {
+  width: 23px;
+  height: 16px;
+}
+
+/* ── Body silhouette SVG ───────────────────────── */
+/* Apply to an SVG containing the exported silhouette paths. */
+
+.body-silhouette {
+  display: block;
+  width: 264px;
+  height: 736px;
+  fill: #f5f5f5;
+  stroke: #000;
+  stroke-width: 2.0736;
+}
