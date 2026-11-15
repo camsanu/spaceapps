@@ -103,6 +103,8 @@ ul {
   width: 16px;
   height: 500px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
   border-radius: 99px;
   background: var(--purple-soft);
 }
@@ -112,6 +114,50 @@ ul {
   height: 68%;
   border-radius: inherit;
   background: var(--purple);
+}
+
+.popup {
+  position: fixed;
+  z-index: 10;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgb(40 36 50 / 45%);
+}
+
+.popup-content {
+  width: min(420px, 100%);
+  min-height: 250px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.popup-close {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--purple-soft);
+  color: var(--purple);
+  font-size: 24px;
+  line-height: 1;
 }
 
 .Body {

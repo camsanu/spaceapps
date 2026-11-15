@@ -1,4 +1,4 @@
-import {useState, useEffect, useId, useRef } from 'react';
+import {useState} from 'react';
 import Calendar from 'react-calendar';
 import './App.css';
 import 'react-calendar/dist/Calendar.css';
@@ -14,13 +14,15 @@ function Dashboard() {
 }
 
 function Important() {
+  const [showRecommendations, setShowRecommendations] = useState(false);
+
   return (
     <section className="Important widget-card widget-card--featured">
       <div className="latestUpdate widget-label">Latest Update: X hours ago</div>
       <div className="doctorRecomendations widget-card__section">
         <div className="widget-section-header">
           <h2>Doctor Recommendations</h2>
-          <WidgetActionButton />
+          <WidgetActionButton onClick={() => setShowRecommendations(true)} />
         </div>
         <ul className="todo-list">
           <li className="todo-item">Doctor Recommendation 1</li>
@@ -29,16 +31,29 @@ function Important() {
         </ul>
       </div>
       <Stats />
+      <PopUp
+        show={showRecommendations}
+        close={() => setShowRecommendations(false)}
+        title="Doctor Recommendations"
+      >
+        <ul className="todo-list">
+          <li className="todo-item">Doctor Recommendation 1</li>
+          <li className="todo-item">Doctor Recommendation 2</li>
+          <li className="todo-item">Doctor Recommendation 3</li>
+        </ul>
+      </PopUp>
     </section>
   )
 }
 
 function Stats() {
+  const [showStats, setShowStats] = useState(false);
+
   return (
     <section className="Stats widget-card">
       <div className="widget-section-header">
         <h2>General stats</h2>
-        <WidgetActionButton />
+        <WidgetActionButton onClick={() => setShowStats(true)} />
       </div>
       <ul className="stats-list">
         <li><span>Heart rate</span><strong>72 bpm</strong></li>
@@ -46,26 +61,35 @@ function Stats() {
         <li><span>Activity</span><strong>6,240 steps</strong></li>
         <li><span>Last check-in</span><strong>Today</strong></li>
       </ul>
+      <PopUp show={showStats} close={() => setShowStats(false)} title="General stats">
+        <ul className="stats-list">
+          <li><span>Heart rate</span><strong>72 bpm</strong></li>
+          <li><span>Sleep</span><strong>7h 42m</strong></li>
+          <li><span>Activity</span><strong>6,240 steps</strong></li>
+          <li><span>Last check-in</span><strong>Today</strong></li>
+        </ul>
+      </PopUp>
     </section>
   )
 }
 
-const [show, setShow] = useState(false);
-
 function WidgetActionButton({ onClick }) {
   return (
-    <button className="text-button" type="button" onClick={() => setShow(true)}>
+    <button className="text-button" type="button" onClick={onClick}>
       See more
     </button>
   )
 }
 
-function PopUp({ show, close, children }) {
+function PopUp({ show, close, title, children }) {
   if (!show) {return null}
   return (
-    <div className="popup">
-      <button className="popup-close" onClick={close}>Close</button>
+    <div className="popup" role="dialog" aria-modal="true" aria-label={title}>
       <div className="popup-content">
+        <div className="popup-header">
+          <h2>{title}</h2>
+          <button className="popup-close" onClick={close} aria-label="Close popup">×</button>
+        </div>
         {children}
       </div>
     </div>
