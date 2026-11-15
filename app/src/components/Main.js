@@ -4,13 +4,34 @@ import { useState, useEffect } from 'react';
 
 function Main() {
   const username = localStorage.getItem('username') || 'User';
+  const [tasks, setTasks] = useState([
+    { id: 'task1', label: 'Task 1' },
+    { id: 'task2', label: 'Task 2' },
+    { id: 'task3', label: 'Task 3' },
+  ]);
+  const totalTasks = 3;
+  const progress = (totalTasks - tasks.length) / totalTasks;
+
+  function completeTask(taskId) {
+    setTasks((currentTasks) => currentTasks.filter((task) => task.id !== taskId));
+  }
+
+  function BodyStatus() {
+    if (progress === 0) {
+      return ('╥‸╥');
+    } else if (progress < 1) {
+      return (`↼_↼`);
+    } else {
+      return ('•‿•');
+    }
+  }
 
   return (
     <div className="App">
       <Header username={username} />
-      <HealthBar />
-      <Body />
-      <Dashboard />
+      <HealthBar progress={progress} />
+      <Body status={BodyStatus()} />
+      <Dashboard tasks={tasks} onTaskComplete={completeTask} />
     </div>
   );
 }
@@ -24,9 +45,10 @@ function Header({ username }) {
   )
 }
 
-function Body() {
+function Body({ status }) {
   return (
     <div className="Body">
+      <div className="body-status">{status}</div>
       <img src="/body.svg" width="180" height="543" useMap="#body_map" alt="Human body map" />
       <map name="body_map">
         <BodyPart name="Heart" coords="108,150,125,138,142,150,146,179,125,208,104,179" />
@@ -63,10 +85,10 @@ function BodyPart({ name, coords }) {
   )
 }
 
-function HealthBar() {
+function HealthBar({ progress }) {
   return (
     <div className="HealthBar">
-      <div className="health-bar"></div>
+      <div className="health-bar" style={{height: `${progress * 100}%`}}></div>
     </div>
   )
 }

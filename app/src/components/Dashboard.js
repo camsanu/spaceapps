@@ -3,11 +3,11 @@ import Calendar from 'react-calendar';
 import './App.css';
 import 'react-calendar/dist/Calendar.css';
 
-function Dashboard() {
+function Dashboard({ tasks, onTaskComplete }) {
   return (
    <main className="Dashboard">
       <Important />
-      <Level2 />
+      <Level2 tasks={tasks} onTaskComplete={onTaskComplete} />
       <CalendarContainer />
     </main>
   )
@@ -96,24 +96,34 @@ function PopUp({ show, close, title, children }) {
   );
 }
 
-function Level2() {
+function Level2({ tasks, onTaskComplete }) {
   return (
     <section className="Level2">
-      <Tasks />
+      <Tasks tasks={tasks} onTaskComplete={onTaskComplete} />
       <Diary />
     </section>
   )
 }
 
-function Tasks() {
+function Tasks({ tasks, onTaskComplete }) {
   return (
     <div className="Tasks widget-card">
       <h2>Today's Tasks</h2>
       <ul className="todo-list">
-        <li className="todo-item">Task 1</li>
-        <li className="todo-item">Task 2</li>
-        <li className="todo-item">Task 3</li>
+        {tasks.map((task) => (
+          <li className="todo-item" key={task.id}>
+            <input
+              type="checkbox"
+              id={task.id}
+              onChange={() => onTaskComplete(task.id)}
+            />
+            <label htmlFor={task.id}>{task.label}</label>
+          </li>
+        ))}
       </ul>
+      {tasks.length === 0 && (
+        <p className="tasks-complete">All tasks complete!</p>
+      )}
     </div>
   )
 }
