@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from 'react';
 
 function Main() {
+  const username = localStorage.getItem('username') || 'User';
+
   return (
     <div className="App">
-      <Header />
+      <Header username={username} />
       <HealthBar />
       <Body />
       <Dashboard />
-      <ExportData />
     </div>
   );
 }
 
-function Header() {
+function Header({ username }) {
   return (
     <div className="Header">
-      <h1>Hello, name</h1>
-      <p>Hours:Minute:Seconds, Weekday, Month, Year</p>
+      <h1>Hello, {username}</h1>
+      <DigitalClock />
     </div>
   )
 }
@@ -36,8 +37,7 @@ function Body() {
 function HealthBar() {
   return (
     <div className="HealthBar">
-      <h1>Health Bar</h1>
-      <div class="health-bar">Health Bar</div>
+      <div className="health-bar"></div>
     </div>
   )
 }
@@ -45,29 +45,58 @@ function HealthBar() {
 function Dashboard() {
   return (
    <div className="Dashboard">
-      <h1>Dashboard</h1>
       <Important />
-      <Tasks />
-      <Diary />
+      <Level2 />
       <Calendar />
     </div>
   )
+}
+
+function DigitalClock() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const dateString = time.toLocaleDateString('en-US', {dateStyle: 'full' });
+
+  const timeString = time.toLocaleTimeString('en-US', {timeStyle: 'short',});
+
+  return (
+    <div className="DigitalClock">
+      <p>{timeString}</p>
+      <p>{dateString}</p>
+    </div>
+  );
 }
 
 function Important() {
   return (
     <div className="Important">
       <div className="latestUpdate">Latest Update: X hours ago</div>
-      <div className="doctorReccomendations">
+      <div className="doctorRecomendations">
+        <h1>Doctor Recommendations</h1>
         <ul>
           <li>Doctor Recommendation 1</li>
           <li>Doctor Recommendation 2</li>
           <li>Doctor Recommendation 3</li>
         </ul>
       </div>
-      <div className="generalInfo">
-        <p>General Info</p>
-      </div>
+      <ExportData />
+    </div>
+  )
+}
+
+function Level2() {
+  return (
+    <div className="Level2">
+      <Tasks />
+      <Diary />
     </div>
   )
 }
@@ -88,8 +117,9 @@ function Tasks() {
 function Diary() {
   return (
     <div className="Diary">
-      <h1>Diary</h1>
-      <textarea placeholder="Write your diary entry here..."></textarea>
+      <h1>Log</h1>
+      <textarea placeholder="Write the log entry here. This will be shared with your healthcare provider."></textarea>
+      <button>Submit</button>
     </div>
   )
 }
