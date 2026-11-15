@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./Login";
-import Main from "./Main";
+import Main from "./components/Main";
 
 function isAuthenticated() {
   return localStorage.getItem("authenticated") === "true";
