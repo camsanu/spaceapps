@@ -1,0 +1,81 @@
+id,user_id,written_at,mood,stress,text
+1,1,2025-12-16T21:00:00,9,4,Training is going well and I feel prepared.
+2,1,2025-12-19T21:00:00,9,4,Training is going well and I feel prepared.
+3,1,2025-12-22T21:00:00,6,4,Tired after the sim runs; early night planned.
+4,1,2025-12-25T21:00:00,8,4,Training is going well and I feel prepared.
+5,1,2025-12-28T21:00:00,7,4,Training is going well and I feel prepared.
+6,1,2025-12-31T21:00:00,9,5,Training is going well and I feel prepared.
+7,1,2026-01-03T21:00:00,8,4,Training is going well and I feel prepared.
+8,1,2026-01-06T21:00:00,7,5,Strong day in the simulator; the crew is in sync.
+9,1,2026-01-09T21:00:00,7,5,Strong day in the simulator; the crew is in sync.
+10,1,2026-01-12T21:00:00,8,5,Training is going well and I feel prepared.
+11,1,2026-01-15T21:00:00,7,5,Great crew dinner; morale is high.
+12,1,2026-01-18T21:00:00,7,5,Missing home a little but staying focused.
+13,1,2026-01-21T21:00:00,6,6,Missing home a little but staying focused.
+14,1,2026-01-24T21:00:00,8,5,Rested and sharp. Exercise felt strong today.
+15,1,2026-01-27T21:00:00,5,6,"Busy day, manageable. Slept a bit broken."
+16,1,2026-01-30T21:00:00,6,6,Missing home a little but staying focused.
+17,1,2026-02-02T21:00:00,8,6,Great crew dinner; morale is high.
+18,1,2026-02-05T21:00:00,6,6,"Busy day, manageable. Slept a bit broken."
+19,1,2026-02-08T21:00:00,7,5,Missing home a little but staying focused.
+20,1,2026-02-11T21:00:00,7,6,Great crew dinner; morale is high.
+21,1,2026-02-14T21:00:00,7,6,"Busy day, manageable. Slept a bit broken."
+22,1,2026-02-17T21:00:00,6,6,"Busy day, manageable. Slept a bit broken."
+23,1,2026-02-20T21:00:00,6,6,Missing home a little but staying focused.
+24,1,2026-02-23T21:00:00,6,5,"Busy day, manageable. Slept a bit broken."
+25,1,2026-02-26T21:00:00,9,5,Great crew dinner; morale is high.
+26,1,2026-03-01T21:00:00,7,5,"Busy day, manageable. Slept a bit broken. Radiation alert earlier; mild nausea, stayed in the shielded area."
+27,1,2026-03-04T21:00:00,7,5,Missing home a little but staying focused.
+28,1,2026-03-07T21:00:00,7,6,Rested and sharp. Exercise felt strong today.
+29,1,2026-03-10T21:00:00,6,6,"Busy day, manageable. Slept a bit broken."
+30,1,2026-03-13T21:00:00,6,6,Missing home a little but staying focused.
+31,1,2026-03-16T21:00:00,9,4,Great crew dinner; morale is high. Noticed some blurred vision when reading small text.
+32,1,2026-03-19T21:00:00,8,5,Great crew dinner; morale is high. Noticed some blurred vision when reading small text.
+33,1,2026-03-22T21:00:00,6,5,"Busy day, manageable. Slept a bit broken."
+34,1,2026-03-25T21:00:00,7,6,Missing home a little but staying focused.
+35,1,2026-03-28T21:00:00,6,6,"Busy day, manageable. Slept a bit broken. Noticed some blurred vision when reading small text."
+36,1,2026-03-31T21:00:00,7,5,Great crew dinner; morale is high.
+37,1,2026-04-03T21:00:00,6,4,"Busy day, manageable. Slept a bit broken."
+38,1,2026-04-06T21:00:00,5,5,Missing home a little but staying focused. Noticed some blurred vision when reading small text.
+39,1,2026-04-09T21:00:00,7,6,Rested and sharp. Exercise felt strong today.
+40,1,2026-04-12T21:00:00,5,7,Long hours and no downtime; I feel drained.
+41,1,2026-04-15T21:00:00,8,5,Great crew dinner; morale is high.
+42,1,2026-04-18T21:00:00,6,7,Missing home a little but staying focused.
+43,1,2026-04-21T21:00:00,4,6,Hard to focus and short-tempered with the crew. Noticed some blurred vision when reading small text.
+44,1,2026-04-24T21:00:00,7,5,Great crew dinner; morale is high.
+45,1,2026-04-27T21:00:00,6,6,"Busy day, manageable. Slept a bit broken."
+46,1,2026-04-30T21:00:00,7,6,Missing home a little but staying focused.
+47,1,2026-05-03T21:00:00,8,4,Rested and sharp. Exercise felt strong today.
+48,1,2026-05-06T21:00:00,7,5,Rested and sharp. Exercise felt strong today.
+49,1,2026-05-09T21:00:00,5,7,"Busy day, manageable. Slept a bit broken."
+50,1,2026-05-12T21:00:00,7,6,Great crew dinner; morale is high.
+51,1,2026-05-15T21:00:00,8,5,Rested and sharp. Exercise felt strong today.
+52,1,2026-05-18T21:00:00,6,5,Missing home a little but staying focused.
+53,1,2026-05-21T21:00:00,6,6,Missing home a little but staying focused.
+54,1,2026-05-24T21:00:00,6,5,"Busy day, manageable. Slept a bit broken."
+55,1,2026-05-27T21:00:00,5,6,Long hours and no downtime; I feel drained.
+56,1,2026-05-30T21:00:00,5,5,Missing home a little but staying focused. Congested and run down.
+57,1,2026-06-02T21:00:00,4,5,Long hours and no downtime; I feel drained. Congested and run down. Noticed some blurred vision when reading small text.
+58,1,2026-06-05T21:00:00,7,5,Missing home a little but staying focused. Noticed some blurred vision when reading small text.
+59,1,2026-06-08T21:00:00,7,7,"Busy day, manageable. Slept a bit broken."
+60,1,2026-06-11T21:00:00,4,7,Long hours and no downtime; I feel drained.
+61,1,2026-06-14T21:00:00,7,5,Missing home a little but staying focused. Noticed some blurred vision when reading small text.
+62,1,2026-06-17T21:00:00,7,5,"Rested and sharp. Exercise felt strong today. Radiation alert earlier; mild nausea, stayed in the shielded area. Noticed some blurred vision when reading small text."
+63,1,2026-06-20T21:00:00,8,4,"Great crew dinner; morale is high. Radiation alert earlier; mild nausea, stayed in the shielded area. Noticed some blurred vision when reading small text."
+64,1,2026-06-23T21:00:00,8,4,Great crew dinner; morale is high.
+65,1,2026-06-26T21:00:00,7,5,Rested and sharp. Exercise felt strong today.
+66,1,2026-06-29T21:00:00,5,6,Long hours and no downtime; I feel drained. Noticed some blurred vision when reading small text.
+67,1,2026-07-02T21:00:00,6,5,Missing home a little but staying focused.
+68,1,2026-07-05T21:00:00,6,6,Missing home a little but staying focused.
+69,1,2026-07-08T21:00:00,5,6,Missing home a little but staying focused.
+70,1,2026-07-11T21:00:00,8,6,Rested and sharp. Exercise felt strong today.
+71,1,2026-07-14T21:00:00,9,5,Getting stronger each day back in gravity.
+72,1,2026-07-17T21:00:00,9,4,Getting stronger each day back in gravity.
+73,1,2026-07-20T21:00:00,9,4,Getting stronger each day back in gravity.
+74,1,2026-07-23T21:00:00,10,4,Getting stronger each day back in gravity.
+75,1,2026-07-26T21:00:00,8,3,Getting stronger each day back in gravity.
+76,1,2026-07-29T21:00:00,9,6,Getting stronger each day back in gravity.
+77,1,2026-08-01T21:00:00,9,5,Getting stronger each day back in gravity.
+78,1,2026-08-04T21:00:00,8,3,Getting stronger each day back in gravity.
+79,1,2026-08-07T21:00:00,10,4,Getting stronger each day back in gravity.
+80,1,2026-08-10T21:00:00,9,5,Getting stronger each day back in gravity.

@@ -1,0 +1,2 @@
+user_id,display_name,birth_date,sex,height_cm,baseline_weight_kg,role,mission_name,launch_date,landing_date,environment,known_conditions,usual_workload_h_per_day
+1,Demo Astronaut,1983-02-25,F,166.1,61.7,Flight Engineer,DEMO-1,2026-01-15,2026-07-14,LEO,"[""seasonal rhinitis""]",8.0

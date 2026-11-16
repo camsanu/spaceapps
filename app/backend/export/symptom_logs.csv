@@ -1,0 +1,59 @@
+id,user_id,logged_at,symptom,severity,category,note
+1,1,2026-01-15T18:00:00,nausea,7,adaptation,space adaptation
+2,1,2026-01-15T18:00:00,headache,5,adaptation,space adaptation
+3,1,2026-01-15T18:00:00,dizziness,5,adaptation,space adaptation
+4,1,2026-01-16T18:00:00,nausea,3,adaptation,space adaptation
+5,1,2026-01-16T18:00:00,headache,4,adaptation,space adaptation
+6,1,2026-01-16T18:00:00,dizziness,1,adaptation,space adaptation
+7,1,2026-01-17T18:00:00,nausea,3,adaptation,space adaptation
+8,1,2026-01-17T18:00:00,headache,1,adaptation,space adaptation
+9,1,2026-01-17T18:00:00,dizziness,1,adaptation,space adaptation
+10,1,2026-02-27T20:00:00,nausea,3,radiation,after solar particle alert
+11,1,2026-02-27T20:00:00,fatigue,6,radiation,after solar particle alert
+12,1,2026-02-27T20:00:00,headache,3,radiation,after solar particle alert
+13,1,2026-02-28T20:00:00,nausea,3,radiation,after solar particle alert
+14,1,2026-02-28T20:00:00,fatigue,5,radiation,after solar particle alert
+15,1,2026-02-28T20:00:00,headache,3,radiation,after solar particle alert
+16,1,2026-03-01T20:00:00,nausea,2,radiation,after solar particle alert
+17,1,2026-03-01T20:00:00,fatigue,2,radiation,after solar particle alert
+18,1,2026-03-01T20:00:00,headache,1,radiation,after solar particle alert
+19,1,2026-06-15T20:00:00,nausea,5,radiation,after solar particle alert
+20,1,2026-06-15T20:00:00,fatigue,6,radiation,after solar particle alert
+21,1,2026-06-15T20:00:00,headache,2,radiation,after solar particle alert
+22,1,2026-06-16T20:00:00,nausea,3,radiation,after solar particle alert
+23,1,2026-06-16T20:00:00,fatigue,5,radiation,after solar particle alert
+24,1,2026-06-16T20:00:00,headache,2,radiation,after solar particle alert
+25,1,2026-06-17T20:00:00,nausea,2,radiation,after solar particle alert
+26,1,2026-06-17T20:00:00,fatigue,2,radiation,after solar particle alert
+27,1,2026-06-17T20:00:00,headache,1,radiation,after solar particle alert
+28,1,2026-03-01T09:00:00,blurred_vision,1,sans,
+29,1,2026-03-08T09:00:00,blurred_vision,1,sans,
+30,1,2026-03-22T09:00:00,blurred_vision,1,sans,
+31,1,2026-03-29T09:00:00,blurred_vision,1,sans,
+32,1,2026-04-05T09:00:00,blurred_vision,2,sans,
+33,1,2026-04-12T09:00:00,blurred_vision,1,sans,
+34,1,2026-04-19T09:00:00,blurred_vision,1,sans,
+35,1,2026-04-26T09:00:00,blurred_vision,2,sans,
+36,1,2026-05-03T09:00:00,blurred_vision,2,sans,
+37,1,2026-05-10T09:00:00,blurred_vision,3,sans,
+38,1,2026-05-17T09:00:00,blurred_vision,2,sans,
+39,1,2026-05-24T09:00:00,blurred_vision,2,sans,
+40,1,2026-05-31T09:00:00,blurred_vision,2,sans,
+41,1,2026-06-07T09:00:00,blurred_vision,2,sans,
+42,1,2026-06-14T09:00:00,blurred_vision,3,sans,
+43,1,2026-06-21T09:00:00,blurred_vision,3,sans,
+44,1,2026-06-28T09:00:00,blurred_vision,3,sans,
+45,1,2026-07-05T09:00:00,blurred_vision,4,sans,
+46,1,2026-07-12T09:00:00,blurred_vision,2,sans,
+47,1,2026-01-14T19:00:00,muscle_soreness,2,general,
+48,1,2026-02-14T19:00:00,headache,2,general,
+49,1,2026-03-02T19:00:00,headache,2,general,
+50,1,2026-03-29T19:00:00,muscle_soreness,3,general,
+51,1,2026-05-16T19:00:00,congestion,2,general,
+52,1,2026-06-08T19:00:00,headache,1,general,
+53,1,2026-06-22T19:00:00,headache,2,general,
+54,1,2026-07-02T19:00:00,congestion,3,general,
+55,1,2026-07-22T19:00:00,headache,1,general,
+56,1,2026-07-31T19:00:00,back_pain,1,general,
+57,1,2026-08-05T19:00:00,headache,3,general,
+58,1,2026-08-10T19:00:00,back_pain,3,general,
