@@ -11,6 +11,12 @@ npm install
 npm start
 ```
 
+`npm start` creates a project-local Python virtual environment at
+`app/backend/.venv`, installs the backend dependencies there, and launches
+both the React development server and FastAPI at `http://127.0.0.1:8000`.
+No system Python packages are modified. Stop the command with `Ctrl+C` to
+stop both servers.
+
 For a production bundle:
 
 ```bash

@@ -15,7 +15,9 @@
     "recharts": "^3.10.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "./scripts/start.sh",
+    "start:frontend": "react-scripts start",
+    "start:backend": "cd ../backend && .venv/bin/python -m uvicorn main:app --reload --host 127.0.0.1 --port 8000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
