@@ -106,6 +106,8 @@ function Level2({ tasks, onTaskComplete }) {
 }
 
 function Tasks({ tasks, onTaskComplete }) {
+  const [selectedTask, setSelectedTask] = useState(null);
+
   return (
     <div className="Tasks widget-card">
       <h2>Today's Tasks</h2>
@@ -118,12 +120,33 @@ function Tasks({ tasks, onTaskComplete }) {
               onChange={() => onTaskComplete(task.id)}
             />
             <label htmlFor={task.id}>{task.label}</label>
+            <button
+              className="info-button"
+              type="button"
+              aria-label={`More information about ${task.label}`}
+              onClick={() => setSelectedTask(task)}
+            >
+              ?
+            </button>
           </li>
         ))}
       </ul>
       {tasks.length === 0 && (
         <p className="tasks-complete">All tasks complete!</p>
       )}
+      <PopUp
+        show={selectedTask !== null}
+        close={() => setSelectedTask(null)}
+        title={selectedTask ? selectedTask.label : 'Task information'}
+      >
+        {selectedTask && (
+          <div className="task-details">
+            <p>{selectedTask.label} is part of today's health routine.</p>
+            <p>You should complete it because it contributes to your overall health and well-being.</p>
+            <p>Mark it complete when you are finished.</p>
+          </div>
+        )}
+      </PopUp>
     </div>
   )
 }

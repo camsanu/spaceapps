@@ -3,4 +3,19 @@ This is the repository containing all our codebase and files for the challenge d
 
 ## How to Run
 
+The web app lives in `app/frontend`. Run:
+
+```bash
+cd app/frontend
+npm install
+npm start
+```
+
+For a production bundle:
+
+```bash
+cd app/frontend
+npm run build
+```
+
 ## Features
