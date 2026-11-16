@@ -1,0 +1,25 @@
+metric_key,sex,ref_mean,ref_sd,normal_low,normal_high,note
+rbc,M,5.2,0.4,4.5,5.9,Illustrative demo values - replace with NASA / clinical references.
+rbc,F,4.6,0.35,4.1,5.1,Illustrative demo values - replace with NASA / clinical references.
+hemoglobin,M,15.0,1.0,13.5,17.5,Illustrative demo values - replace with NASA / clinical references.
+hemoglobin,F,13.5,0.9,12.0,15.5,Illustrative demo values - replace with NASA / clinical references.
+hematocrit,M,47.0,3.0,41.0,53.0,Illustrative demo values - replace with NASA / clinical references.
+hematocrit,F,41.0,2.5,36.0,46.0,Illustrative demo values - replace with NASA / clinical references.
+wbc,any,7.0,1.5,4.0,11.0,Illustrative demo values - replace with NASA / clinical references.
+lymphocyte_pct,any,30.0,6.0,20.0,40.0,Illustrative demo values - replace with NASA / clinical references.
+neutrophil_pct,any,58.0,7.0,40.0,70.0,Illustrative demo values - replace with NASA / clinical references.
+platelets,any,250.0,50.0,150.0,400.0,Illustrative demo values - replace with NASA / clinical references.
+crp,any,1.5,1.2,0.0,3.0,Illustrative demo values - replace with NASA / clinical references.
+cortisol_am,any,14.0,4.0,6.0,23.0,Illustrative demo values - replace with NASA / clinical references.
+vitamin_d,any,36.0,8.0,30.0,50.0,Illustrative demo values - replace with NASA / clinical references.
+ferritin,M,110.0,55.0,24.0,336.0,Illustrative demo values - replace with NASA / clinical references.
+ferritin,F,60.0,40.0,11.0,307.0,Illustrative demo values - replace with NASA / clinical references.
+ctx,any,0.35,0.12,0.1,0.7,Illustrative demo values - replace with NASA / clinical references.
+p1np,any,55.0,18.0,20.0,100.0,Illustrative demo values - replace with NASA / clinical references.
+glucose,any,90.0,8.0,70.0,99.0,Illustrative demo values - replace with NASA / clinical references.
+bmd_lumbar_spine,any,1.2,0.12,1.08,,Illustrative demo values - replace with NASA / clinical references.
+bmd_femoral_neck,any,0.93,0.12,0.81,,Illustrative demo values - replace with NASA / clinical references.
+resting_hr,any,62.0,8.0,50.0,75.0,Illustrative demo values - replace with NASA / clinical references.
+hrv_rmssd,any,50.0,18.0,25.0,85.0,Illustrative demo values - replace with NASA / clinical references.
+systolic_bp,any,118.0,10.0,95.0,129.0,Illustrative demo values - replace with NASA / clinical references.
+diastolic_bp,any,74.0,8.0,60.0,84.0,Illustrative demo values - replace with NASA / clinical references.

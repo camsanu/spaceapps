@@ -1,0 +1,41 @@
+metric_key,label,unit,category,decimals,good_direction
+rbc,Red blood cells,10^12/L,blood,2,range
+hemoglobin,Hemoglobin,g/dL,blood,1,range
+hematocrit,Hematocrit,%,blood,1,range
+wbc,White blood cells,10^9/L,blood,1,range
+lymphocyte_pct,Lymphocytes,%,blood,1,range
+neutrophil_pct,Neutrophils,%,blood,1,range
+platelets,Platelets,10^9/L,blood,0,range
+crp,C-reactive protein (inflammation),mg/L,biomarker,2,down
+cortisol_am,Morning cortisol (stress),ug/dL,biomarker,1,range
+vitamin_d,Vitamin D (25-OH),ng/mL,biomarker,1,up
+ferritin,Ferritin (iron stores),ng/mL,biomarker,0,range
+ctx,CTX (bone resorption),ng/mL,biomarker,2,down
+p1np,P1NP (bone formation),ng/mL,biomarker,0,up
+glucose,Fasting glucose,mg/dL,biomarker,0,range
+bmd_lumbar_spine,Bone density - lumbar spine,g/cm2,bone,3,up
+bmd_femoral_neck,Bone density - femoral neck,g/cm2,bone,3,up
+lean_mass_kg,Lean body mass,kg,muscle,1,up
+grip_strength_kg,Grip strength,kg,muscle,1,up
+weight_kg,Body weight,kg,body,1,range
+resting_hr,Resting heart rate,bpm,cardio,1,down
+hrv_rmssd,Heart-rate variability (RMSSD),ms,cardio,1,up
+systolic_bp,Systolic blood pressure,mmHg,cardio,0,range
+diastolic_bp,Diastolic blood pressure,mmHg,cardio,0,range
+sleep_total_min,Sleep duration,min,sleep,0,up
+sleep_deep_min,Deep sleep,min,sleep,0,up
+sleep_rem_min,REM sleep,min,sleep,0,up
+sleep_efficiency_pct,Sleep efficiency,%,sleep,1,up
+sleep_score,Sleep score,0-100,sleep,0,up
+exercise_min,Exercise (total),min,activity,0,up
+resistance_min,Resistance exercise,min,activity,0,up
+cardio_min,Cardio exercise,min,activity,0,up
+active_kcal,Active energy,kcal,activity,0,up
+workload_hours,Workload,h,activity,1,down
+kcal_intake,Calorie intake,kcal,nutrition,0,range
+protein_g,Protein intake,g,nutrition,0,range
+vitamin_d_iu,Vitamin D intake,IU,nutrition,0,up
+calcium_mg,Calcium intake,mg,nutrition,0,range
+sodium_mg,Sodium intake,mg,nutrition,0,down
+water_ml,Water intake,mL,nutrition,0,up
+radiation_dose_msv,Radiation dose (daily),mSv,radiation,3,down

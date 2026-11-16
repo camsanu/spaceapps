@@ -1,0 +1,3 @@
+id,user_id,name,category,start_date,end_date,severity,notes
+1,1,Upper respiratory infection,infection,2026-05-29,2026-06-03,2,Congestion and low-grade fatigue; resolved with rest.
+2,1,Orthostatic intolerance,cardiovascular,2026-07-14,2026-07-17,2,Lightheadedness on standing after landing.
