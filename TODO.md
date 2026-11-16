@@ -1,0 +1,15 @@
+# TODO
+- Fitness tracking (Steps, nutrition, water)
+- Sleep tracking
+- mental health (mood evaluations, journaling, logs)
+- menstrual cycle tracking ?
+- Prediction models for body (bone density, muscle loss)
+- bpm
+- blood pressure
+- blood oxygen
+- Prediction models for outside (solar flares)
+- Emergency contact for in-ship and on-earth consult
+- Profile (predispositions, measures)
+- status report print button
+- reminders for regular check ups (video?), meds, water
+- avatar customization for the body for easy identification and also fun :)
